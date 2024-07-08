@@ -19,11 +19,11 @@ The project has been ongoing for nine years, exploring various dimensions eviden
 Below is a list of our main repositories, each accompanied by a brief description:
 
 - [Comparison of Workflows: a Step Further](https://github.com/ROCKFlows/experiments-public/tree/master): The questions focus on predicting key performance metrics (accuracy, execution time, and memory usage) of machine learning workflows on user datasets without undergoing the evaluation phase.
-    - **_Lessons Learned:_**
-            - Comparing workflows is not about testing if one metric has a better value, whether once or on average, but **about assessing if there is a significant difference**. Consequently, it is more interesting to build classes of algorithms for a given problem and metric, which requires storing a large number of results and computations
-          - To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.  
-          - Preprocessing has a significant impact; it is not about comparing algorithms but **comparing workflows.**
-          - Metadata dependencies seem difficult/impossible to identify through logical patterns.
+    - **_Lessons Learned:_**  
+            - Comparing workflows is not about testing if one metric has a better value, whether once or on average, but **about assessing if there is a significant difference**. Consequently, it is more interesting to build classes of algorithms for a given problem and metric, which requires storing a large number of results and computations.  
+          - To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.   
+          - Preprocessing has a significant impact; it is not about comparing algorithms but **comparing workflows.**  
+          - Metadata dependencies seem difficult/impossible to identify through logical patterns.   
 
 - Version de Miguel
 - 
