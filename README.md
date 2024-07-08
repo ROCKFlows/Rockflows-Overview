@@ -17,3 +17,7 @@ The project has been ongoing for nine years, exploring various dimensions eviden
 ## Repository List
 
 Below is a list of our main repositories, each accompanied by a brief description:
+
+- Version de Luca Parisi
+- Version de Miguel
+- 
