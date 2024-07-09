@@ -20,10 +20,12 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
 
 - [Comparison of Workflows: a Step Further](https://github.com/ROCKFlows/experiments-public/tree/master): The questions focus on predicting key performance metrics (accuracy, execution time, and memory usage) of machine learning workflows on user datasets without undergoing the evaluation phase.
     - **_Lessons Learned:_**  
-            - Comparing workflows is not about testing if one metric has a better value, whether once or on average, but **about assessing if there is a significant difference**. Consequently, it is more interesting to build classes of algorithms for a given problem and metric, which requires storing a large number of results and computations.  
-          - To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.   
-          - Preprocessing has a significant impact; it is not about comparing algorithms but **comparing workflows.**  
-          - Metadata dependencies seem difficult/impossible to identify through logical patterns.   
+            - [Luca Parisi](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Comparing workflows is not about testing if one metric has a better value, whether once or on average, but **about assessing if there is a significant difference**. Consequently, it is more interesting to build classes of algorithms for a given problem and metric, which requires storing a large number of results and computations.  
+          - [Luca Parisi](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.   
+          - [Luca Parisi](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Preprocessing has a significant impact; it is not about comparing algorithms but **comparing workflows.**  
+          - [Luca Parisi](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Metadata dependencies seem difficult/impossible to identify through logical patterns.
+- Learning from experiments on Machine Learning Workflows   
+  - **_Lessons Learned:_**  
 
 - Version de Miguel
 - RF V1
