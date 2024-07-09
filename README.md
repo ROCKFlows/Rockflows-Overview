@@ -26,7 +26,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
           - [Luca Parisi](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Metadata dependencies seem difficult/impossible to identify through logical patterns.
 - Learning from experiments on Machine Learning Workflows   
   - **_Lessons Learned:_**  
-
+           - [Miguel Fabián ROMERO RONDÓN]
 - Version de Miguel
 - RF V1
 - Version Nicolas L.
