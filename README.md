@@ -34,6 +34,7 @@ We focused on designing a highly scalable Meta-Learning model that does not requ
           - [Miguel Fabián ROMERO RONDÓN'report] **Research Limitations:** (Insights from Extensive Meta-Learning Experiments)  
 Beyond the limitations related to the number of datasets used and the predefined workflows, it became evident that, in line with autoML research, the required learning processes, i.e., the experiments needed to achieve our goals, exceeded the reasonable capacities of the computing grids at our disposal. Ultimately, (i) we were not truly learning by merely predicting performance without gaining real insights, and (ii) to avoid learning on new datasets, we needed to train on a large number of datasets.  
 
+- [Automating the Learning Processes for Extensive Experimentation]: Given the large number of experiments required, it is essential to automate the learning processes. This automation includes composing pipelines, training on appropriate datasets, and recording measurements. Since it is not sufficient to compare a single set of measurements but rather to compare sets of measurements, it is also necessary to automate ranking and meta-learning processes. To ensure precision, we must maintain consistency in execution and measurement environments. Additionally, considering our limited resources, we aim to reuse data preparation and implement a form of crowd experimenting to add new experiments to our knowledge base at a constrained cost.
 
 - RF V1
 - Lagardere
