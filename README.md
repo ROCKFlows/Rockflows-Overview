@@ -16,7 +16,7 @@ The project has been ongoing for nine years, exploring various dimensions eviden
 
 ## Repository List
 
-Below is a list of our main repositories, each accompanied by a brief description:
+Below is a list of our main repositories, each accompanied by a brief description and an abstract of lessons learned.
 
 - [Comparison of Workflows: a Step Further](https://github.com/ROCKFlows/experiments-public/tree/master): The questions focus on predicting key performance metrics (accuracy, execution time, and memory usage) of machine learning workflows on user datasets without undergoing the evaluation phase.
     - **_Lessons Learned:_**  
@@ -24,7 +24,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
           - [Luca Parisi'report](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.   
           - [Luca Parisi'report](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Preprocessing has a significant impact; it is not about comparing algorithms but **comparing workflows.**  
           - [Luca Parisi'report](https://github.com/ROCKFlows/experiments-public/blob/master/doc/tesi.pdf) Metadata dependencies seem difficult/impossible to identify through logical patterns.
-- Learning from experiments on Machine Learning Workflows   
+- [Learning from experiments on Machine Learning Workflows](https://github.com/ROCKFlows/experiments-public/tree/master)  (same repository)
   - **_Lessons Learned:_**  
            - [Miguel Fabián ROMERO RONDÓN'report]
 - Version de Miguel
