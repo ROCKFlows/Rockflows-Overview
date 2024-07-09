@@ -34,8 +34,9 @@ We focused on designing a highly scalable Meta-Learning model that does not requ
           - [Miguel Fabián ROMERO RONDÓN'report] **Research Limitations:** (Insights from Extensive Meta-Learning Experiments)  
 Beyond the limitations related to the number of datasets used and the predefined workflows, it became evident that, in line with autoML research, the required learning processes, i.e., the experiments needed to achieve our goals, exceeded the reasonable capacities of the computing grids at our disposal. Ultimately, (i) we were not truly learning by merely predicting performance without gaining real insights, and (ii) to avoid learning on new datasets, we needed to train on a large number of datasets.  
 
-- Version de Miguel
+
 - RF V1
+- Lagardere
 - Version Nicolas L.
 - Version Gunther
 - Version Yacine
