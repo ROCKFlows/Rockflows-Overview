@@ -2,7 +2,9 @@
 Welcome to the Rockflows organization on GitHub! This repository serves as the central hub for all our projects, providing an overview and links to each individual repository.
 
 ## About Rockflows
-Rockflows is dedicated to creating machine learning (ML) workflows tailored to problem-solving needs. We pursue several operational objectives:
+Rockflows aims to help non-expert users on the selection of the Machine Learning Workflows to solve their Machine Learning problems.
+
+We pursue several operational objectives:
 1. Constructing a suitable workflow based on data and business requirements.
 2. Retrieving similar past experiments based on data information, business requirements, and algorithmic choices.
 3. Automatically enriching the knowledge base from past experiences.
