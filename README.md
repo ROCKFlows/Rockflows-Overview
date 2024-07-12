@@ -58,7 +58,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
         - Ultimately, (i) we were not truly learning by merely predicting performance without gaining real insights, and (ii) to avoid learning on new datasets, we needed to train on a large number of datasets.
     - **_Publications:_**
         -  [Miguel Fabián ROMERO RONDÓN'report, Master 2, Ubinet, 2017](./docs/reports/2017_Romero-Report-Internship.pdf)
-        - [Duffau, C., Camillieri, C., & Blay-Fornarino, M. (2017). Improving confidence in experimental systems through automated construction of argumentation diagrams. ICEIS 2017 - Proceedings of the 19th International Conference on Enterprise Information Systems, 2.](https://hal.science/hal-01678797/document)
+        - [Duffau, C., Camillieri, C., & Blay-Fornarino, M. (2017). Improving confidence in experimental systems through automated construction of argumentation diagrams. ICEIS 2017 - Proceedings of the 19th International Conference on Enterprise Information Systems, 2.](https://hal.science/hal-01678797/document)  
 
 
 - **2018** -**Automating the Learning Processes for Extensive Experimentation**  
@@ -80,16 +80,21 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
         - **Empowering Experimentation with DSL for Pipeline Description** The implementation of a domain-specific language (DSL) has empowered users by simplifying pipeline descriptions and enhancing readability, mastery, and control. This DSL facilitates efficient pipeline articulation and generation, ensuring independence from the target language while promoting operational clarity and control.
             - It was a great tool for Rockflows, but we struggled to promote it, especially encountering resistance from data scientists' established practices.
         -  **Integrating External Experiments requires Rigorous Reproducibility Evaluation** We enriched our training dataset by integrating results from our legacy experimentation system into a new metrics registry. This process involved rigorous Reproducibility evaluation to ensure that the added elements were comparable. Additionally, experiments from third parties, like OpenML100, were included after verifying their compatibility with our processes.
-    - **_sub-conclusion:_** **_Balancing Research Ambition with Engineering Feasibility in Academic Contexts_**
+    - **_sub-conclusion:_**     **Balancing Research Ambition with Engineering Feasibility in Academic Contexts**
         - The automation of learning processes is essential for extensive experimentation. It is crucial to ensure valid pipeline compositions, manage resources efficiently, and maintain reproducibility. Docker encapsulation, error monitoring, and event-driven scheduling are key components of this automation. A domain-specific language (DSL) can simplify pipeline descriptions, but promoting it may be challenging. Integrating external experiments requires rigorous reproducibility evaluation.
         -  Despite all this automation work, at this stage of the project, we have a large code base spread across many repositories, deployed on different virtual machines, and accessible externally. However, we lack the means for proper maintenance or to transition to widespread adoption. This effort serves as a springboard for discussions with industry partners but needs to be more utilized in the development foundation. Today, we understand that we risk losing control over the system, which was not apparent to us at the time, explaining subsequent challenges.
+        - Le domaine évolue de plus en plus vite, il faut trouver un moyen de capturer la connaissance de manière plus "automatique" mais sans basculer dans le meta-learning.
+        - On est conscient que le projet devient gros on tente une [exploration des dépendances](https://rimel-uca.github.io/chapters/2019/architecture-analysis-rockflows-2019/contents)
     - **_Publications:_**
         - [Günther Jungbluth'report (French), Engineer, Polytech Nice Sophia, 2018](./docs/reports/2018_Ghunter.pdf)
         - [Benni, B., Blay Fornarino, M., Mosser, S., Precisio, F., & Jungbluth, G. When DevOps meets meta-learning: A portfolio to rule them all. Proceedings - 2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems Companion, MODELS-C 2019, 605–612](https://doi.org/10.1109/MODELS-C.2019.00092)
         - [Blay-Fornarino, M., Jungbluth, G., & Mosser, S. (2018). Applying DevOps to Machine Learning: ROCKFlows, a Story from the Trenches.](https://www.academia.edu/download/104996357/document.pdf)
+        - [Etude au niveau Master 2 : Comment est organisé le développement d’un projet Open Source de Machine Learning ? ]https://rimel-uca.github.io/chapters/2018/machine-learning-explorations-2018/comment-est-organise-le-developpement-dun-projet-open-source-de-machine-learning
 
-- Interface web un element clef rapport de Joel -- RF V1
-- récupérer du RIMEL
+- Interface web un element clef rapport de Joel -- RF V1 + travail de simon + eddy + .... un composant réutilisable...
+  - **_sub-conclusion:_**
+    - On ne peut pas gérer les changements de verions d'outils tels que angular ! 
+
 - Version Mireille : impliqué les data-scientists;  Au coueur des feature Models
 - Lagardere
 - Version Nicolas L.
@@ -101,20 +106,36 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
         -   **Custom Merging Approach Required** A classical merge approach is unsuitable as individuals can perceive each algorithm differently. We utilized our access to the Feature Model (FM) structure to implement an ad-hoc algorithm, which still needs to be fully validated.
         -  **Dual Formalization for Algorithm Constraints** Understanding the complexities involved, we adopted a dual formalization for algorithm constraints. This thorough approach, driven by the algorithms and the organization of the pipelines, was crucial in managing the intricacies of the project.
     - **_sub-conclusion:_** **Challenges of Managing Growing Codebases**
-      We are increasingly dealing with large volumes of code, and despite significant efforts in structuring, we are beginning to see projects proliferate. This project was initiated from scratch by a second-year undergraduate student for pedagogical purposes and is likely to be repeated, leading to our results becoming increasingly scattered.
+      We are increasingly dealing with large volumes of code, and despite significant efforts in structuring, we are beginning to see projects proliferate. This project was initiated from scratch by a second-year undergraduate student for pedagogical purposes and is likely to be repeated, leading to our results becoming increasingly scattered.   
+    - **_Publications:_**  
+        - [Nicolas L. rapport(French), DUT, 2020](./docs/reports/2020_rapport_NicolasLacroix.pdf)
+      
+- **2020 ** - ** Extraction automatique Des bibliothques de ML aux FM** depot de Mireille sur weka?
+    - **_Publications:_**
+        - [Etude au niveau Master 2 : Comment les bibliothèques de codes de Machine Learning évoluent-elles ?, 2020](https://rimel-uca.github.io/chapters/2020/MLAndEvolution/model2020)
+        - [Etude au niveau Master 2 : Extraire les préconditions des codes de RapidMiner,2022]!https://rimel-uca.github.io/chapters/2022/Extraire%20les%20pr%C3%A9conditions%20des%20codes%20de%20RapidMiner/content)
     -
-- **2021** - **Evolvable SPL management**
+- **2021-2024** - **Evolvable SPL management**
     - **_Lessons Learned:_**
     - **_Publications:_**
         -  [Amraoui, Y. el, Blay-Fornarino, M., Collet, P., Precioso, F., & Muller, J. (2022). Evolvable SPL management with partial knowledge: an application to anomaly detection in time series. Proceedings of the 26th ACM International Systems and Software Product Line Conference-Volume A, 222–233.](https://hal.science/hal-03811038/document)
-    -
-- **2022** - (In progress) [**Taming the Diversity of Computational Notebooks**](https://src.koda.cnrs.fr/users/sign_in)In response to the practices of data scientists, who typically prefer starting from notebook analysis and acknowledging the industrial challenge of finding suitable notebooks that meet business requirements (beyond just data), we focused on retrieving "adapted" notebooks based on the expression of business requirements and automatic analysis of datasets.
+        -  Yassine El Amraoui, Phd  2024
+
+- **2023** - (In progress) [**Taming the Diversity of Computational Notebooks**](https://src.koda.cnrs.fr/users/sign_in)In response to the practices of data scientists, who typically prefer starting from notebook analysis and acknowledging the industrial challenge of finding suitable notebooks that meet business requirements (beyond just data), we focused on retrieving "adapted" notebooks based on the expression of business requirements and automatic analysis of datasets.
     - **_Lessons Learned:_**
         - nécessité d'adapter le processus même d'analyse des données pour en extraire les méta-data et les transformer en features puis en feature booleene.
         - pas si facile de faire comprendre à la communauté des SPL que les notebooks peuvent être vu comme des artefacts de SPL (produits/clones de code) et que de représenter les produits dans un FM peut aider à retrouver "facilement" des produits existants.
     - **_Publications:_**
         - [Brault, Y., El Amraoui, Y., Blay-Fornarino, M., Collet, P., Jaillet, F., & Precioso, F. (2023, August). Taming the Diversity of Computational Notebooks. In Proceedings of the 27th ACM International Systems and Software Product Line Conference-Volume A (pp. 27-33).](https://hal.science/hal-04247860/file/tamingTheDiversity-SPLC2023.pdf)
+        - [Etude au niveau Master 2 : Qualité logicielle dans les notebooks Jupyter, 2023](https://rimel-uca.github.io/chapters/2023/Qualit%C3%A9%20logicielle%20dans%20les%20notebooks%20Jupyter/content)
+        - [Etude au niveau Master 2 : Quelle qualité logicielle dans les codes des notebooks?,2923](https://rimel-uca.github.io/chapters/2023/Jupyter%20Notebooks%20et%20bonnes%20pratiques_entre%20conventions%20implicites%20et%20besoin%20de%20formalisation/content)
 
-
+- **2024** -(In progress) vers MLOPS et LLMs
+    - **_Lessons Learned:_**
+    - **_Publications:_**
+        - [Etude au niveau Master 2 : Are Data scientists embracing DevOps principles for Model versioning ?, 2024](https://rimel-uca.github.io/chapters/2024/Are%20Data%20scientists%20embracing%20DevOps%20principles%20for%20Model%20versioning%20%3F/content)
+        - [Etude au niveau Master 2 : De DevOps à MLops : Quelle place pour MLFlow ?, 2024](https://rimel-uca.github.io/chapters/2024/Tra%C3%A7abilit%C3%A9%20des%20exp%C3%A9riences%20par%20MLFlow/content)
+        - [Etude au niveau Master 2 : Abstraction de l’utilisation de LangChain, 2024](https://rimel-uca.github.io/chapters/2024/Abstraction%20de%20l'utilisation%20de%20LangChain/content)
+        - [Etude au niveau Master 2 : Variabilité de Langchain dans l’implémentation de chatbots, 2024](https://rimel-uca.github.io/chapters/2024/Variabilit%C3%A9%20de%20LangChain%20dans%20l'impl%C3%A9mentation%20de%20chatbots/content)
 - Version Yacine
 
