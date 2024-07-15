@@ -46,6 +46,21 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
       - [Camillieri, C., Parisi, L., Blay-Fornarino, M., Precioso, F., Riveill, M., & Cancela-Vaz, J. (2016, October). Towards a software product line for machine learning workflows: Focus on supporting evolution. In 10th Workshop on Models and Evolution co-located with ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems (MODELS 2016).](https://scholar.archive.org/work/qkyqja53pzh55betygpxctx5te/access/wayback/http://ceur-ws.org/Vol-1706/paper9.pdf)
       - [Camillieri, C.,  Blay-Fornarino, M., Precioso, F., Riveill, M. (2016). Request your Own Knowledge Flows (ROCKFlows)](https://github.com/ROCKFlows/rockflows-papers/blob/master/cnrs-innovatives-bigdata-16/poster.pdf)
 
+- **2016, 2022** - **Automatic Feature Model Extraction in Machine Learning Libraries**  
+  Since the project's inception, we have aimed to use automated methods to extract Feature Models (FM) from Machine Learning (ML) libraries. To date, we have yet to find a satisfactory approach.  
+  Our [initial attempt in 2016]((https://github.com/ROCKFlows/weka-extractor/tree/master)) involved a simple process to extract the structure of the Weka library and convert it into a Feature Model for variability analysis. This approach relied on Java reflection to gather information:
+  (i) Utilizing package organization to determine the library's structure. (ii) Exploiting the "capabilities" of each class to identify algorithm features.  (iii) Merging extracted FMs from each class using Familiar.  
+  This bottom-up approach aimed to merge class-level FMs into a global FM. The complexity of merging FMs exploded, rendering the approach non-viable.  
+  Attempts to replicate this approach on other ML libraries yielded unsatisfactory results. Further efforts involved extracting algorithm preconditions from RapidMiner and associating them at the hierarchical level to simplify FMs. We used a similar approach for post-conditions by studying algorithm chaining. This led to identifying some pre- and post-conditions but highlighted significant challenges.
+    - **_Lessons Learned:_**
+        - **Bottom-Up Approach Limitations**  The bottom-up approach is not optimal for extracting FMs from ML libraries because each library's unique structures make the process highly complex.
+        - **The Need for Comprehensive Reverse Engineering** A deep reverse engineering effort is crucial for extracting FMs from ML libraries, with clear objectives guiding the process. An FM's structure serves a specific purpose, distinct from merely locating an algorithm within a library. Additionally, the richness of an FM lies in its structure and constraints, which are particularly challenging to extract automatically.
+        - **Complexity of Merging Feature Models** This issue underscores the broader problem of modeling, where automated merging of diverse structures is highly complex and often impractical.
+    - **_sub-conclusion:_** Reflecting on these lessons, we recognize the necessity of refining our approaches and considering more top-down or hybrid strategies for future attempts at FM extraction from ML libraries.
+    - **_Publications:_**
+        - [Etude au niveau Master 2 : Comment les bibliothèques de codes de Machine Learning évoluent-elles ?, 2020](https://rimel-uca.github.io/chapters/2020/MLAndEvolution/model2020)
+        - [Etude au niveau Master 2 : Extraire les préconditions des codes de RapidMiner,2022](https://rimel-uca.github.io/chapters/2022/Extraire%20les%20pr%C3%A9conditions%20des%20codes%20de%20RapidMiner/content)
+
 
 - **2017** - [**Learning from experiments on Machine Learning Workflows**](https://github.com/ROCKFlows/pfe-expe-learning)  
   As we cannot predict performances from a logic approach, we deviate to the construction of a Meta-Learning system. The theoretic model we have designed is focused on supervised classification problems, although it can be extended to unsupervised or supervised regression problems. We used the results of different Machine Learning experiments, precisely the results of 1086 workflows (composed of 16 pre-processing techniques, 68 classifiers, and 10 parameter strategies) tested over 101 datasets from the UCI repository. This input data was processed to produce the meta-datasets, with which we trained different sub-models to predict three properties: accuracy, total time, and model size.
@@ -57,7 +72,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
         -  Beyond the limitations related to the number of datasets used and the predefined workflows, it became evident that, in line with autoML research, the required learning processes, i.e., the experiments needed to achieve our goals, exceeded the reasonable capacities of the computing grids at our disposal.
         - Ultimately, (i) we were not truly learning by merely predicting performance without gaining real insights, and (ii) to avoid learning on new datasets, we needed to train on a large number of datasets.
     - **_Publications:_**
-        -  [Miguel Fabián ROMERO RONDÓN'report, Master 2, Ubinet, 2017](./docs/reports/2017_Romero-Report-Internship.pdf)
+        - [Miguel Fabián ROMERO RONDÓN'report, Master 2, Ubinet, 2017](./docs/reports/2017_Romero-Report-Internship.pdf)
         - [Duffau, C., Camillieri, C., & Blay-Fornarino, M. (2017). Improving confidence in experimental systems through automated construction of argumentation diagrams. ICEIS 2017 - Proceedings of the 19th International Conference on Enterprise Information Systems, 2.](https://hal.science/hal-01678797/document)  
 
 
@@ -110,21 +125,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
     - **_Publications:_**  
         - [Nicolas L. rapport(French), DUT, 2020](./docs/reports/2020_rapport_NicolasLacroix.pdf)
       
-- **2016, 2022** - **Automatic Feature Model Extraction in Machine Learning Libraries**  
-  Since the project's inception, we have aimed to use automated methods to extract Feature Models (FM) from Machine Learning (ML) libraries. To date, we have yet to find a satisfactory approach.  
-  Our [initial attempt in 2016]((https://github.com/ROCKFlows/weka-extractor/tree/master)) involved a simple process to extract the structure of the Weka library and convert it into a Feature Model for variability analysis. This approach relied on Java reflection to gather information:
-  (i) Utilizing package organization to determine the library's structure. (ii) Exploiting the "capabilities" of each class to identify algorithm features.  (iii) Merging extracted FMs from each class using Familiar.  
-This bottom-up approach aimed to merge class-level FMs into a global FM. The complexity of merging FMs exploded, rendering the approach non-viable.  
-Attempts to replicate this approach on other ML libraries yielded unsatisfactory results. Further efforts involved extracting algorithm preconditions from RapidMiner and associating them at the hierarchical level to simplify FMs. We used a similar approach for post-conditions by studying algorithm chaining. This led to identifying some pre- and post-conditions but highlighted significant challenges.
-    - **_Lessons Learned:_**
-        - **Bottom-Up Approach Limitations**  The bottom-up approach is not optimal for extracting FMs from ML libraries because each library's unique structures make the process highly complex. 
-        - **The Need for Comprehensive Reverse Engineering** A deep reverse engineering effort is crucial for extracting FMs from ML libraries, with clear objectives guiding the process. An FM's structure serves a specific purpose, distinct from merely locating an algorithm within a library. Additionally, the richness of an FM lies in its structure and constraints, which are particularly challenging to extract automatically.
-        - **Complexity of Merging Feature Models** This issue underscores the broader problem of modeling, where automated merging of diverse structures is highly complex and often impractical.
-    - **_sub-conclusion:_** Reflecting on these lessons, we recognize the necessity of refining our approaches and considering more top-down or hybrid strategies for future attempts at FM extraction from ML libraries.
-    - **_Publications:_**
-        - [Etude au niveau Master 2 : Comment les bibliothèques de codes de Machine Learning évoluent-elles ?, 2020](https://rimel-uca.github.io/chapters/2020/MLAndEvolution/model2020)
-        - [Etude au niveau Master 2 : Extraire les préconditions des codes de RapidMiner,2022](https://rimel-uca.github.io/chapters/2022/Extraire%20les%20pr%C3%A9conditions%20des%20codes%20de%20RapidMiner/content)
-    -
+
 - **2021-2024** - **Evolvable SPL management**
     - **_Lessons Learned:_**
     - **_Publications:_**
