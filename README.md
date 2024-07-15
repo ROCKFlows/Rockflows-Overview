@@ -120,6 +120,9 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
     - **_Publications:_**
         -  [Amraoui, Y. el, Blay-Fornarino, M., Collet, P., Precioso, F., & Muller, J. (2022). Evolvable SPL management with partial knowledge: an application to anomaly detection in time series. Proceedings of the 26th ACM International Systems and Software Product Line Conference-Volume A, 222–233.](https://hal.science/hal-03811038/document)
         -  Yassine El Amraoui, Phd  2024
+        - [Salome MALTESE rapport (French) : expérimentations sur la détection d’anomalies sur des séries temporelles, M1, 2021](./docs/reports/2021_Maltese.pdf)
+        - [Anar Abetayeva, M2, Auto-ML and anomaly detection in time series, 2022](./docs/reports/2022_report_Abetayeva Anar_TER_fin.pdf)
+      
 
 - **2023** - (In progress) [**Taming the Diversity of Computational Notebooks**](https://src.koda.cnrs.fr/users/sign_in)In response to the practices of data scientists, who typically prefer starting from notebook analysis and acknowledging the industrial challenge of finding suitable notebooks that meet business requirements (beyond just data), we focused on retrieving "adapted" notebooks based on the expression of business requirements and automatic analysis of datasets.
     - **_Lessons Learned:_**
