@@ -110,16 +110,26 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
     - **_Publications:_**  
         - [Nicolas L. rapport(French), DUT, 2020](./docs/reports/2020_rapport_NicolasLacroix.pdf)
       
-- **2020 ** - ** Extraction automatique Des bibliothques de ML aux FM** depot de Mireille sur weka?
+- **2016, 2022** - **Automatic Feature Model Extraction in Machine Learning Libraries**  
+  Since the project's inception, we have aimed to use automated methods to extract Feature Models (FM) from Machine Learning (ML) libraries. To date, we have yet to find a satisfactory approach.  
+  Our [initial attempt in 2016]((https://github.com/ROCKFlows/weka-extractor/tree/master)) involved a simple process to extract the structure of the Weka library and convert it into a Feature Model for variability analysis. This approach relied on Java reflection to gather information:
+  (i) Utilizing package organization to determine the library's structure. (ii) Exploiting the "capabilities" of each class to identify algorithm features.  (iii) Merging extracted FMs from each class using Familiar.  
+This bottom-up approach aimed to merge class-level FMs into a global FM. The complexity of merging FMs exploded, rendering the approach non-viable.  
+Attempts to replicate this approach on other ML libraries yielded unsatisfactory results. Further efforts involved extracting algorithm preconditions from RapidMiner and associating them at the hierarchical level to simplify FMs. We used a similar approach for post-conditions by studying algorithm chaining. This led to identifying some pre- and post-conditions but highlighted significant challenges.
+    - **_Lessons Learned:_**
+        - **Bottom-Up Approach Limitations**  The bottom-up approach is not optimal for extracting FMs from ML libraries because each library's unique structures make the process highly complex. 
+        - **The Need for Comprehensive Reverse Engineering** A deep reverse engineering effort is crucial for extracting FMs from ML libraries, with clear objectives guiding the process. An FM's structure serves a specific purpose, distinct from merely locating an algorithm within a library. Additionally, the richness of an FM lies in its structure and constraints, which are particularly challenging to extract automatically.
+        - **Complexity of Merging Feature Models** This issue underscores the broader problem of modeling, where automated merging of diverse structures is highly complex and often impractical.
+    - **_sub-conclusion:_** Reflecting on these lessons, we recognize the necessity of refining our approaches and considering more top-down or hybrid strategies for future attempts at FM extraction from ML libraries.
     - **_Publications:_**
         - [Etude au niveau Master 2 : Comment les bibliothèques de codes de Machine Learning évoluent-elles ?, 2020](https://rimel-uca.github.io/chapters/2020/MLAndEvolution/model2020)
-        - [Etude au niveau Master 2 : Extraire les préconditions des codes de RapidMiner,2022]!https://rimel-uca.github.io/chapters/2022/Extraire%20les%20pr%C3%A9conditions%20des%20codes%20de%20RapidMiner/content)
+        - [Etude au niveau Master 2 : Extraire les préconditions des codes de RapidMiner,2022](https://rimel-uca.github.io/chapters/2022/Extraire%20les%20pr%C3%A9conditions%20des%20codes%20de%20RapidMiner/content)
     -
 - **2021-2024** - **Evolvable SPL management**
     - **_Lessons Learned:_**
     - **_Publications:_**
         -  [Amraoui, Y. el, Blay-Fornarino, M., Collet, P., Precioso, F., & Muller, J. (2022). Evolvable SPL management with partial knowledge: an application to anomaly detection in time series. Proceedings of the 26th ACM International Systems and Software Product Line Conference-Volume A, 222–233.](https://hal.science/hal-03811038/document)
-        -  Yassine El Amraoui, Phd  2024
+        -  [Yassine El Amraoui, Phd  2024](https://theses.hal.science/tel-04618657v1)
         - [Salome MALTESE rapport (French) : expérimentations sur la détection d’anomalies sur des séries temporelles, M1, 2021](./docs/reports/2021_Maltese.pdf)
         - [Anar Abetayeva, M2, Auto-ML and anomaly detection in time series, 2022](./docs/reports/2022_report_Abetayeva Anar_TER_fin.pdf)
       
