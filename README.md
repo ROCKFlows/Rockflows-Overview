@@ -26,6 +26,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
 
 - **2016** - [**Comparison of Workflows: a Step Further**](https://github.com/ROCKFlows/experiments-public/tree/master)  
    The questions focus on predicting key performance metrics (accuracy, execution time, and memory usage) of machine learning workflows on user datasets without undergoing the evaluation phase.
+    - **_Models_** relations entre algo, XP et ranking 
     - **_Lessons Learned:_**  
       -  Comparing workflows is not about testing if one metric has a better value, whether once or on average, but **about assessing if there is a significant difference**. Consequently, it is more interesting to build classes of algorithms for a given problem and metric, which requires storing a large number of results and computations.  
       - To evaluate a workflow, it is essential to master the evaluation processes, notably by reproducing not only the experiment but also by conducting it on the same data split.   
@@ -34,17 +35,6 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
     - **_Publications:_**
         - [Luca Parisi'report, Master 2, Ubinet, 2016](./docs/reports/2016_Parisi_tesis.pdf)  
       
-- **2016** - [**Towards a software product line for machine learning workflows**](https://github.com/ROCKFlows/rockflows.github.io.git)
-    - Repositories
-      - **[Main repository](https://github.com/ROCKFlows/rockflows.github.io.git)**
-      - [CORE](https://github.com/ROCKFlows/core)
-      - [SPLAR](https://github.com/ROCKFlows/splar-fm-reasoner) A feature model reasoner adapted to the needs of the project.
-      - [WS to configure FM](https://github.com/ROCKFlows/ws-fm-configuration)
-      - [FM as excel sheet](https://github.com/ROCKFlows/ui-fm-to-excel-metadata)
-      - ... so many !!
-    - **_Publications:_**
-      - [Camillieri, C., Parisi, L., Blay-Fornarino, M., Precioso, F., Riveill, M., & Cancela-Vaz, J. (2016, October). Towards a software product line for machine learning workflows: Focus on supporting evolution. In 10th Workshop on Models and Evolution co-located with ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems (MODELS 2016).](https://scholar.archive.org/work/qkyqja53pzh55betygpxctx5te/access/wayback/http://ceur-ws.org/Vol-1706/paper9.pdf)
-      - [Camillieri, C.,  Blay-Fornarino, M., Precioso, F., Riveill, M. (2016). Request your Own Knowledge Flows (ROCKFlows)](https://github.com/ROCKFlows/rockflows-papers/blob/master/cnrs-innovatives-bigdata-16/poster.pdf)
 
 - **2016, 2022** - **Automatic Feature Model Extraction in Machine Learning Libraries**  
   Since the project's inception, we have aimed to use automated methods to extract Feature Models (FM) from Machine Learning (ML) libraries. To date, we have yet to find a satisfactory approach.  
@@ -52,6 +42,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
   (i) Utilizing package organization to determine the library's structure. (ii) Exploiting the "capabilities" of each class to identify algorithm features.  (iii) Merging extracted FMs from each class using Familiar.  
   This bottom-up approach aimed to merge class-level FMs into a global FM. The complexity of merging FMs exploded, rendering the approach non-viable.  
   Attempts to replicate this approach on other ML libraries yielded unsatisfactory results. Further efforts involved extracting algorithm preconditions from RapidMiner and associating them at the hierarchical level to simplify FMs. We used a similar approach for post-conditions by studying algorithm chaining. This led to identifying some pre- and post-conditions but highlighted significant challenges.
+    - **_Models_** peut etre en faisant une synthese algo-> feature et hierarchie ? Mais justement ce n'est pas aussi simple... on pourrait revenir sur Algo et dessous les implementations? + les relations aux méta-données?
     - **_Lessons Learned:_**
         - **Bottom-Up Approach Limitations**  The bottom-up approach is not optimal for extracting FMs from ML libraries because each library's unique structures make the process highly complex.
         - **The Need for Comprehensive Reverse Engineering** A deep reverse engineering effort is crucial for extracting FMs from ML libraries, with clear objectives guiding the process. An FM's structure serves a specific purpose, distinct from merely locating an algorithm within a library. Additionally, the richness of an FM lies in its structure and constraints, which are particularly challenging to extract automatically.
@@ -64,6 +55,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
 
 - **2017** - [**Learning from experiments on Machine Learning Workflows**](https://github.com/ROCKFlows/pfe-expe-learning)  
   As we cannot predict performances from a logic approach, we deviate to the construction of a Meta-Learning system. The theoretic model we have designed is focused on supervised classification problems, although it can be extended to unsupervised or supervised regression problems. We used the results of different Machine Learning experiments, precisely the results of 1086 workflows (composed of 16 pre-processing techniques, 68 classifiers, and 10 parameter strategies) tested over 101 datasets from the UCI repository. This input data was processed to produce the meta-datasets, with which we trained different sub-models to predict three properties: accuracy, total time, and model size.
+    - **_Models_** reprendre exactement la spec de Miguel
     - **_Lessons Learned:_**
         -  **Meta-Feature selection and extraction:** Based on the learning phases, we developed a module to extract the 48 most representative meta-features of a given dataset, which influence accuracy. It should be noted that the most significant meta-features vary depending on the workflow. We used these meta-features for prediction by leveraging the similarities between the meta-features of the given dataset and those of datasets already in the Meta-Learning system. Calculating meta-features is not free, and selecting the most impactful meta-features is necessary to reduce the computational load.
         - **Scalability of the Meta-Learning Model:**
@@ -75,9 +67,22 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
         - [Miguel Fabián ROMERO RONDÓN'report, Master 2, Ubinet, 2017](./docs/reports/2017_Romero-Report-Internship.pdf)
         - [Duffau, C., Camillieri, C., & Blay-Fornarino, M. (2017). Improving confidence in experimental systems through automated construction of argumentation diagrams. ICEIS 2017 - Proceedings of the 19th International Conference on Enterprise Information Systems, 2.](https://hal.science/hal-01678797/document)  
 
+- **2016-17** - [**Towards a software product line for machine learning workflows**](https://github.com/ROCKFlows/rockflows.github.io.git)
+    - Repositories
+        - **[Main repository](https://github.com/ROCKFlows/rockflows.github.io.git)**
+        - [CORE](https://github.com/ROCKFlows/core)
+        - [SPLAR](https://github.com/ROCKFlows/splar-fm-reasoner) A feature model reasoner adapted to the needs of the project.
+        - [WS to configure FM](https://github.com/ROCKFlows/ws-fm-configuration)
+        - [FM as excel sheet](https://github.com/ROCKFlows/ui-fm-to-excel-metadata)
+        - ... so many !!
+    - **_Models_** a priori extraire celui de l'article
+    - **_Publications:_**
+        - [Camillieri, C., Parisi, L., Blay-Fornarino, M., Precioso, F., Riveill, M., & Cancela-Vaz, J. (2016, October). Towards a software product line for machine learning workflows: Focus on supporting evolution. In 10th Workshop on Models and Evolution co-located with ACM/IEEE 19th International Conference on Model Driven Engineering Languages and Systems (MODELS 2016).](https://scholar.archive.org/work/qkyqja53pzh55betygpxctx5te/access/wayback/http://ceur-ws.org/Vol-1706/paper9.pdf)
+        - [Camillieri, C.,  Blay-Fornarino, M., Precioso, F., Riveill, M. (2016). Request your Own Knowledge Flows (ROCKFlows)](https://github.com/ROCKFlows/rockflows-papers/blob/master/cnrs-innovatives-bigdata-16/poster.pdf)
 
 - **2018** -**Automating the Learning Processes for Extensive Experimentation**  
    Given the large number of experiments required, it is essential to automate the learning processes. This automation includes composing pipelines, training on appropriate datasets, and recording measurements. Since it is not sufficient to compare a single set of measurements but rather to compare sets of measurements, it is also necessary to automate ranking and meta-learning processes. To ensure precision, we must maintain consistency in execution and measurement environments. Additionally, considering our limited resources, we aim to reuse data preparation and implement a form of crowd experimenting to add new experiments to our knowledge base at a constrained cost.
+    - **_Models_** soit l'architecture soit le graphe des algos
     - **_Lessons Learned:_**
         -  **Automating valid Pipeline Composition based on Constraints and Graph Representation** enhances the automation of learning processes, ensuring valid ML workflow compositions while efficiently managing complexity.
             - **Data-centric constraints** are expressed as pre- and post-conditions on algorithms relative to metadata. For example, a pipeline like "_NumericTransformationToNominal; NumericNormalization; SVM"_ is invalid because the preprocessing step _NumericNormalization_ requires numeric data, which the previous algorithm removes.
@@ -117,6 +122,7 @@ Below is a list of our main repositories, each accompanied by a brief descriptio
 - **2020** - **[Deriving New Insights from ML Workflow Modeling](https://github.com/ROCKFlows/FromMLWFConfigurationToBPMN)**
   While we had established the basics of generating valid ML pipelines by configuring a feature model in a predefined order, we embarked on a journey to facilitate pipeline construction for data scientists using a novel approach to configuration. This approach not only aimed to make the process more intuitive but also to provide new insights through more user-friendly tools, such as pipeline modeling. Despite having a dedicated language at this stage, we chose to explore the path of graphical modeling, aligning with the BPMN standard, to bring a new perspective.
   Beyond code generation, we faced two challenges:  (i) extending the BPMN language to allow the input of additional, coherent information helpful in enriching our knowledge base (e.g., new 'qualified' algorithms and constraints on orders) ; (ii) automatically updating our knowledge base with new information and managing potential conflicts.
+    - **_Models_** BPMN mais faire le lien avec la hierarchie...
     - **_Lessons Learned:_**
         -   **Custom Merging Approach Required** A classical merge approach is unsuitable as individuals can perceive each algorithm differently. We utilized our access to the Feature Model (FM) structure to implement an ad-hoc algorithm, which still needs to be fully validated.
         -  **Dual Formalization for Algorithm Constraints** Understanding the complexities involved, we adopted a dual formalization for algorithm constraints. This thorough approach, driven by the algorithms and the organization of the pipelines, was crucial in managing the intricacies of the project.
